@@ -1,7 +1,7 @@
 module Lita
   module Handlers
     class BabyElephant < Handler
-      route /\bb(aby)? e(lephant)?( me)?\b/i, :baby_elephant
+      route /\bbaby? ?e(lephant)?s?( me)?\b/i, :baby_elephant
 
       def baby_elephant response
         ele = ReadIt.sub('babyelephants').recent.select(&:image?).sample
