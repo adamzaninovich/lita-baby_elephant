@@ -4,8 +4,9 @@ module Lita
       route /\bbaby? ?e(lephant)?s?( me)?\b/i, :baby_elephant
 
       def baby_elephant response
-        ele = ReadIt.sub('babyelephants').recent.select(&:image?).sample
-        response.reply ele.image
+        elepics = ReadIt.sub('babyelephants').recent_images
+        elegifs = ReadIt.sub('babyelephantgifs').recent_images
+        response.reply (elepics + elegifs).sample.image
       end
     end
 
