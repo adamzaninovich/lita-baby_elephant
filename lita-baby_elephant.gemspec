@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-baby_elephant"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.4"
   spec.authors       = ["Adam Zaninovich"]
   spec.email         = ["adam.zaninovich@activenetwork.com"]
   spec.description   = %q{Get a baby elephant gif from /r/babyelephants'}
