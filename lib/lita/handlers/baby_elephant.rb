@@ -1,7 +1,7 @@
 module Lita
   module Handlers
     class BabyElephant < Handler
-      route /\bbaby( )?elephant\b/i, :baby_elephant
+      route /\bbaby ?e(lephant)?s?\b/i, :baby_elephant
       route /\bb(aby)? e(lephant)?( me)?\b/i, :baby_elephant, command: true
 
       def baby_elephant response
